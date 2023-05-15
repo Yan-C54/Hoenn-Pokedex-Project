@@ -1,0 +1,168 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-image: url("background-day.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #333333;
+}
+
+body.darkMode {
+    background-image: url("background.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo,
+header .imageButton {
+    width: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+header #themeMode {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header .logo:hover,
+header .imageButton:hover,
+main .card:hover {
+    transform: scale(1.1);
+}
+
+main {
+    padding: 25px;
+}
+
+.pokedex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+.card:hover {
+    background-color: #96d9d6;
+    cursor: pointer;
+}
+
+.darkMode .card {
+    background-color:rgba(0, 0, 0, 0.4);
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+.info span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.gif {
+    width: 60px;
+    height: 60px;
+}
+
+.types {
+    display: flex;
+    gap: 15px;
+}
+
+.type {
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.grass {
+    background-color: #7ac74c;
+}
+
+.poison {
+    background-color: #a040a0;
+}
+
+.fire {
+    background-color: #ee8130;
+}
+
+.water {
+    background-color: #6390f0;
+}
+
+.bug {
+    background-color: #a6b91a;
+}
+
+.flying {
+    background-color: #a991f0;
+}
+
+.fighting {
+    background-color: #c13029;
+}
+
+.ground {
+    background-color: #e0c169;
+}
+
+.dark {
+    background-color: #715948;
+}
+
+.normal {
+    background-color: #a9a978;
+}
+
+.description {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+h1 {
+    border: 2px solid #333333;
+    border-radius: 25px;
+    padding: 10px;   
+}
+
+#header1{
+    border: 2px solid #333333;
+    border-radius: 25px;
+    padding: 10px;   
+}
+
+.darkMode #header1,
+.darkMode h1{
+    border: 2px solid #d8e3ec;
+}
